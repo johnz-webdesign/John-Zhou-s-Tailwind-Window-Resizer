@@ -1,3 +1,11 @@
+/*
+ * John Zhou's Tailwind Window Resizer
+ * Copyright © 2025 John Zhou
+ *
+ * This software is licensed under the MIT License.
+ * See the LICENSE file for details.
+ */
+
 function toggleOverlay() {
   let id = "screen-size-overlay";
   let existing = document.getElementById(id);

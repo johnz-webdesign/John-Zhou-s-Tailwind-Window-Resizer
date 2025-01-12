@@ -1,3 +1,11 @@
+/*
+ * John Zhou's Tailwind Window Resizer
+ * Copyright © 2025 John Zhou
+ *
+ * This software is licensed under the MIT License.
+ * See the LICENSE file for details.
+ */
+
 {
   "manifest_version": 3,
   "name": "John Zhou's Tailwind Window Resizer",
