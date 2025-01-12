@@ -1,10 +1,10 @@
 {
   "manifest_version": 3,
   "name": "Screen Size Overlay + Tailwind Resizer",
-  "version": "1.5",
+  "version": "1.8",
   "description": "Displays screen size and resizes window to Tailwind breakpoints.",
   "permissions": ["storage", "scripting", "activeTab"],
-  "host_permissions": ["http://*/*", "https://*/*"],
+  "host_permissions": ["<all_urls>"],
   "background": {
     "service_worker": "background.js"
   },
@@ -31,8 +31,5 @@
       "suggested_key": { "default": "Alt+Shift+4" },
       "description": "Resize to 640px (sm)"
     }
-  },
-  "action": {
-    "default_title": "Toggle Screen Size Overlay"
   }
 }
