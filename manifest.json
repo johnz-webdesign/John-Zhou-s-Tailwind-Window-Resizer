@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "John Zhou's Window Resizer",
+  "name": "John Zhou's Tailwind Window Resizer",
   "version": "2.0",
   "description": "Displays screen size and resizes window to Tailwind breakpoints.",
   "permissions": ["storage", "scripting", "activeTab"],
