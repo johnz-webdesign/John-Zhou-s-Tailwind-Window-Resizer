@@ -1,12 +1,17 @@
 {
   "manifest_version": 3,
-  "name": "Screen Size Overlay + Tailwind Resizer",
-  "version": "1.8",
+  "name": "John Zhou's Window Resizer",
+  "version": "2.0",
   "description": "Displays screen size and resizes window to Tailwind breakpoints.",
   "permissions": ["storage", "scripting", "activeTab"],
   "host_permissions": ["<all_urls>"],
   "background": {
     "service_worker": "background.js"
+  },
+  "icons": {
+    "16": "icons/icon-16.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
   },
   "content_scripts": [
     {
