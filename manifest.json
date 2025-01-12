@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Screen Size Overlay",
+  "version": "1.0",
+  "description": "Displays the current screen size",
+  "permissions": ["storage"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["overlay.js"]
+    }
+  ]
+}
