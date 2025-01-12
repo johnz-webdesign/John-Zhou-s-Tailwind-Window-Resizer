@@ -1,13 +1,38 @@
 {
   "manifest_version": 3,
-  "name": "Screen Size Overlay",
-  "version": "1.0",
-  "description": "Displays the current screen size",
-  "permissions": ["storage"],
+  "name": "Screen Size Overlay + Tailwind Resizer",
+  "version": "1.5",
+  "description": "Displays screen size and resizes window to Tailwind breakpoints.",
+  "permissions": ["storage", "scripting", "activeTab"],
+  "host_permissions": ["http://*/*", "https://*/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
-      "js": ["overlay.js"]
+      "js": ["content.js"]
     }
-  ]
+  ],
+  "commands": {
+    "resize-1536": {
+      "suggested_key": { "default": "Alt+Shift+1" },
+      "description": "Resize to 1536px (2xl)"
+    },
+    "resize-1280": {
+      "suggested_key": { "default": "Alt+Shift+2" },
+      "description": "Resize to 1280px (xl)"
+    },
+    "resize-1024": {
+      "suggested_key": { "default": "Alt+Shift+3" },
+      "description": "Resize to 1024px (lg)"
+    },
+    "resize-640": {
+      "suggested_key": { "default": "Alt+Shift+4" },
+      "description": "Resize to 640px (sm)"
+    }
+  },
+  "action": {
+    "default_title": "Toggle Screen Size Overlay"
+  }
 }
